@@ -17,4 +17,5 @@ add_executable(new_target src/weapons/BulletWeapon.h
         src/enemies/EnemyClassEnum.h
         src/enemies/EnemyFactionEnum.h
         levels/MainMenu.cpp
-        levels/MainMenu.h)
+        levels/MainMenu.h
+        tests/TestPlayer.cpp)
