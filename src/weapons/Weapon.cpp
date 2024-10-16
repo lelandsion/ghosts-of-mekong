@@ -2,7 +2,7 @@
 // Created by Leland Sion on 2024-10-14.
 //
 
-#include "../include/Weapon.h"
+#include "Weapon.h"
 
 // Constructor
 Weapon::Weapon(const std::string &weaponName, int maxAmmo, int damage)
@@ -19,7 +19,7 @@ Weapon::Weapon(const Weapon &other) {
 
 // Move constructor
 Weapon::Weapon(Weapon &&other) noexcept {
-moveFrom(std::move(other));
+    moveFrom(std::move(other));
 }
 
 // Destructor
@@ -38,11 +38,11 @@ Weapon& Weapon::operator=(const Weapon &other) {
 
 // Move assignment operator
 Weapon& Weapon::operator=(Weapon &&other) noexcept {
-if (this != &other) {
-free();  // Free current resources
-moveFrom(std::move(other));  // Move resources from 'other'
-}
-return *this;
+    if (this != &other) {
+        free();  // Free current resources
+        moveFrom(std::move(other));  // Move resources from 'other'
+    }
+    return *this;
 }
 
 // Helper function to copy resources
@@ -71,30 +71,30 @@ void Weapon::copyFrom(const Weapon &other) {
 
 // Helper function to move resources
 void Weapon::moveFrom(Weapon &&other) noexcept {
-name = std::move(other.name);
-ammo = other.ammo;
-maxAmmo = other.maxAmmo;
-damage = other.damage;
-isFiring = other.isFiring;
-isReloading = other.isReloading;
-fireRateDelay = other.fireRateDelay;
-reloadDelay = other.reloadDelay;
-recoil = other.recoil;
-fireMode = other.fireMode;
-weaponCategory = other.weaponCategory;
-weaponType = other.weaponType;
+    name = std::move(other.name);
+    ammo = other.ammo;
+    maxAmmo = other.maxAmmo;
+    damage = other.damage;
+    isFiring = other.isFiring;
+    isReloading = other.isReloading;
+    fireRateDelay = other.fireRateDelay;
+    reloadDelay = other.reloadDelay;
+    recoil = other.recoil;
+    fireMode = other.fireMode;
+    weaponCategory = other.weaponCategory;
+    weaponType = other.weaponType;
 
-// Move SFML objects
-fireSound = std::move(other.fireSound);
-reloadSound = std::move(other.reloadSound);
-emptyClipSound = std::move(other.emptyClipSound);
-weaponSprite = std::move(other.weaponSprite);
-weaponTexture = std::move(other.weaponTexture);
-weaponFrame = std::move(other.weaponFrame);
+    // Move SFML objects
+    fireSound = std::move(other.fireSound);
+    reloadSound = std::move(other.reloadSound);
+    emptyClipSound = std::move(other.emptyClipSound);
+    weaponSprite = std::move(other.weaponSprite);
+    weaponTexture = std::move(other.weaponTexture);
+    weaponFrame = std::move(other.weaponFrame);
 
-// Invalidate the other weapon's state
-other.ammo = 0;
-other.maxAmmo = 0;
+    // Invalidate the other weapon's state
+    other.ammo = 0;
+    other.maxAmmo = 0;
 }
 
 // Free resources (if needed)

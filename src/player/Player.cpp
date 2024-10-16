@@ -1,7 +1,7 @@
 //
 // Created by Leland Sion on 2024-10-09.
 //
-#include "../include/Player.h"
+#include "Player.h"
 
 Player::Player()
     : position(100.f, 300.f), velocity(0.f, 0.f), speed(200.f), jumpHeight(300.f),

@@ -5,7 +5,6 @@
 #ifndef VIETNAM_MARINE_2_WEAPON_H
 #define VIETNAM_MARINE_2_WEAPON_H
 
-
 #include <string>
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
