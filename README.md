@@ -1,4 +1,4 @@
-# Ghosts of the Mekong
+# Ghosts of Mekong
 
 Live your soldier fantasies in the free-to-play video game Ghosts of Mekong.
 * Play as a Vietnam marine at the height of the Vietnam War
