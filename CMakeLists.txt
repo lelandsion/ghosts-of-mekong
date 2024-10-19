@@ -1,4 +1,4 @@
-add_executable(new_target src/weapons/BulletWeapon.h
+add_executable(new_target
         src/weapons/WeaponEnums.h
         include/GameObject.cpp
         include/GameObject.h
@@ -18,4 +18,14 @@ add_executable(new_target src/weapons/BulletWeapon.h
         src/enemies/EnemyFactionEnum.h
         levels/MainMenu.cpp
         levels/MainMenu.h
-        tests/TestPlayer.cpp)
+        tests/TestPlayer.cpp
+        src/weapons/MeleeWeapon.cpp
+        src/weapons/MeleeWeapon.h
+        src/weapons/LaserWeapon.cpp
+        src/weapons/LaserWeapon.h
+        src/weapons/SniperWeapon.cpp
+        src/weapons/SniperWeapon.h
+        src/weapons/ShotgunWeapon.cpp
+        src/weapons/ShotgunWeapon.h
+        src/weapons/Projectile.cpp
+        src/weapons/Projectile.h)

@@ -1,6 +1,23 @@
 //
 // Created by Leland Sion on 2024-10-15.
 //
+// Class: Enemy
+// Description: Represents an enemy character in the Vietnam Marine game.
+// The Enemy class inherits from GameObject and defines specific behaviors,
+// properties, and attributes related to enemy characters, including
+// movement patterns, health, attack methods, and AI behaviors.
+//
+// Usage:
+// Enemy enemy;
+// enemy.setPosition(200, 300);
+// enemy.update(); // Call this in the game loop to update enemy behavior
+// enemy.render(window); // Draw the enemy to the screen
+//
+// Notes:
+// - This class may be extended for different types of enemies, each with
+//   unique behaviors and attributes.
+// - Consider implementing an AI system to control enemy actions based on
+//   game state or player interactions.
 
 #ifndef ENEMY_H
 #define ENEMY_H

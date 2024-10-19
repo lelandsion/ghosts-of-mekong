@@ -1,6 +1,22 @@
 //
 // Created by Leland Sion on 2024-10-09.
 //
+// Class: Player
+// Description: Represents the player character in the Vietnam Marine game.
+// The Player class manages player attributes, actions, and interactions within the game world,
+// including health, position, controls, and gameplay mechanics such as attacking and movement.
+//
+// Usage:
+// Player player;
+// player.setPosition(100, 200);
+// player.update(); // Call this in the game loop to update player state
+// player.render(window); // Draw the player character to the window
+//
+// Notes:
+// - The Player class may be extended to accommodate different player types,
+//   such as special abilities or character classes.
+// - Ensure that player controls and interactions are responsive and intuitive
+//   for an enhanced gameplay experience.
 
 #ifndef VIETNAM_MARINE_2_PLAYER_H
 #define VIETNAM_MARINE_2_PLAYER_H

@@ -1,6 +1,20 @@
 //
 // Created by Leland Sion on 2024-10-15.
 //
+// Enum: DeathType
+// Description: Defines the various types of death that can occur in the Vietnam Marine game.
+// Each type represents a different mechanism of death, providing context for gameplay and
+// potentially affecting game mechanics such as scoring, animations, or game-over conditions.
+//
+// Usage:
+// DeathType death = DeathType::Shot;
+// if (death == DeathType::Burned) {
+//     // Handle burned death scenario
+// }
+//
+// Notes:
+// - The enum values can be extended for future gameplay features.
+// - Consider the implications of each death type on gameplay mechanics and player experience.
 
 #ifndef VIETNAM_MARINE_2_DEATHTYPE_H
 #define VIETNAM_MARINE_2_DEATHTYPE_H

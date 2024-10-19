@@ -1,6 +1,21 @@
 //
 // Created by Leland Sion on 2024-10-15.
 //
+// Enum: StatusEffectType
+// Description: Defines various types of status effects that can be applied to players
+// or enemies in the Vietnam Marine game. Each enumerator represents a specific status
+// effect that alters gameplay, affecting attributes such as health, speed, or damage
+// output for a limited time.
+//
+// Usage:
+// StatusEffectType statusEffect = StatusEffectType::Poisoned;
+// if (statusEffect == StatusEffectType::Stunned) {
+//     // Handle stunned behavior for the affected entity
+// }
+//
+// Notes:
+// - Additional status effects can be added as needed to expand gameplay mechanics.
+// - Consider the duration and interactions of status effects to ensure balanced gameplay.
 
 #ifndef VIETNAM_MARINE_2_STATUSEFFECTS_H
 #define VIETNAM_MARINE_2_STATUSEFFECTS_H

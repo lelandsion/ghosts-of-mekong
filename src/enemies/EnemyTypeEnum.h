@@ -1,6 +1,20 @@
 //
 // Created by Leland Sion on 2024-10-15.
 //
+// Enum: EnemyType
+// Description: Defines the various types of enemies that can be encountered in the Vietnam Marine game.
+// Each enumerator represents a specific enemy type, which can have unique attributes, behaviors,
+// and interactions within the game environment.
+//
+// Usage:
+// EnemyType enemyType = EnemyType::Soldier;
+// if (enemyType == EnemyType::Tank) {
+//     // Handle tank-specific logic
+// }
+//
+// Notes:
+// - Additional enemy types can be added as needed to accommodate new gameplay features.
+// - Consider implementing a system for enemy AI behavior based on the enemy type.
 
 #ifndef ENEMY_TYPE_H
 #define ENEMY_TYPE_H

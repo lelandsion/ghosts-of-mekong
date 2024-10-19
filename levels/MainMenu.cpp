@@ -4,6 +4,7 @@
 
 #include "MainMenu.h"
 // Constructor
+
 MainMenu::MainMenu() {
     // Load the background texture
     if (!backgroundTexture.loadFromFile("assets/levels/menu_texture.png")) {

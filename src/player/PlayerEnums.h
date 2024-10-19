@@ -1,6 +1,21 @@
 //
 // Created by Leland Sion on 2024-10-15.
 //
+// Enum: PlayerClass
+// Description: Defines various classes or types of players in the Vietnam Marine game.
+// Each enumerator represents a specific player class that may have unique abilities,
+// attributes, or roles within the game, impacting gameplay dynamics and strategies.
+//
+// Usage:
+// PlayerClass playerClass = PlayerClass::Infantry;
+// if (playerClass == PlayerClass::Sniper) {
+//     // Handle sniper-specific logic
+// }
+//
+// Notes:
+// - Additional player classes can be added as needed to enhance gameplay variety.
+// - Consider implementing class-specific abilities and characteristics to diversify
+//   player interactions and strategies.
 
 #ifndef VIETNAM_MARINE_2_PLAYERENUMS_H
 #define VIETNAM_MARINE_2_PLAYERENUMS_H

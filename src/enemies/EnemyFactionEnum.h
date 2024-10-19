@@ -1,6 +1,21 @@
 //
 // Created by Leland Sion on 2024-10-15.
 //
+// Enum: EnemyFaction
+// Description: Defines various factions of enemies in the Vietnam Marine game.
+// Each enumerator represents a specific faction that groups enemies based on their
+// allegiance or characteristics, impacting gameplay dynamics and interactions.
+//
+// Usage:
+// EnemyFaction faction = EnemyFaction::Guerrilla;
+// if (faction == EnemyFaction::Military) {
+//     // Handle behavior specific to military enemies
+// }
+//
+// Notes:
+// - Additional factions can be added as necessary to enhance gameplay depth.
+// - Consider the implications of faction relationships on gameplay mechanics,
+//   such as alliances or rivalries between enemy factions.
 
 #ifndef ENEMY_FACTION_H
 #define ENEMY_FACTION_H

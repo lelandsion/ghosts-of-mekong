@@ -1,6 +1,23 @@
 //
 // Created by Leland Sion on 2024-10-15.
 //
+//
+// Created by Leland Sion on 2024-10-15.
+//
+// Enum: WeaponType
+// Description: Defines various types of weapons available in the Vietnam Marine game.
+// Each enumerator represents a specific weapon class that influences gameplay mechanics,
+// such as damage, range, and firing behavior.
+//
+// Usage:
+// WeaponType weaponType = WeaponType::Ranged;
+// if (weaponType == WeaponType::Melee) {
+//     // Handle melee-specific logic
+// }
+//
+// Notes:
+// - Additional weapon types can be added as needed to expand gameplay variety.
+// - Consider the implications of each weapon type on game balance and player strategy.
 
 #ifndef VIETNAM_MARINE_2_WEAPONENUMS_H
 #define VIETNAM_MARINE_2_WEAPONENUMS_H

@@ -1,6 +1,21 @@
 //
 // Created by Leland Sion on 2024-10-15.
 //
+// Enum: PowerUpType
+// Description: Defines various types of power-ups available to the player in the Vietnam Marine game.
+// Each enumerator represents a specific power-up that can enhance the player's abilities,
+// provide temporary boosts, or grant unique effects during gameplay.
+//
+// Usage:
+// PowerUpType powerUp = PowerUpType::HealthPack;
+// if (powerUp == PowerUpType::SpeedBoost) {
+//     // Apply speed increase to the player
+// }
+//
+// Notes:
+// - Additional power-up types can be added as needed to expand gameplay variety.
+// - Consider the implications of each power-up on game balance and player strategy.
+
 
 #ifndef VIETNAM_MARINE_2_POWERUPTYPEENUMS_H
 #define VIETNAM_MARINE_2_POWERUPTYPEENUMS_H

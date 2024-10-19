@@ -1,6 +1,20 @@
 //
 // Created by Leland Sion on 2024-10-15.
 //
+// Enum: EnemyClass
+// Description: Defines various classes of enemies in the Vietnam Marine game.
+// Each enumerator represents a specific enemy class that determines the enemy's
+// combat role and characteristics, affecting gameplay mechanics and strategies.
+//
+// Usage:
+// EnemyClass enemyClass = EnemyClass::Ranged;
+// if (enemyClass == EnemyClass::Heavy) {
+//     // Handle behavior specific to heavy enemies
+// }
+//
+// Notes:
+// - Additional enemy classes can be added as needed to expand gameplay variety.
+// - Consider the implications of each enemy class on gameplay balance and design.
 
 #ifndef ENEMY_CLASS_H
 #define ENEMY_CLASS_H

@@ -1,6 +1,15 @@
 //
 // Created by Leland Sion on 2024-10-15.
 //
+// Class: MainMenu
+// Description: Represents the main menu of the Vietnam Marine game.
+// It handles the rendering of the menu and user input for navigation.
+// The menu includes options to start the game, access settings, or exit.
+//
+// Usage:
+// MainMenu menu;
+// menu.render(window);
+// menu.handleInput(window);
 
 #ifndef MAINMENU_H
 #define MAINMENU_H
