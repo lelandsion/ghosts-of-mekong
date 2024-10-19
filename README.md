@@ -1,4 +1,4 @@
-# vietnam-marine-2
+# Shadow-of-Saigon
 
 Live your soldier fantasies in the free-to-play video game Vietnam Marine 2.
 * Play as a Vietnam marine at the height of the Vietnam War
