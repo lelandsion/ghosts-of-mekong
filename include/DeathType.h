@@ -26,7 +26,7 @@ enum class DeathType {
     Standard,           // General death (collapsing to the ground)
     Shot,               // Death by BulletWeapon
 
-    cut,                // death by melee weapon
+    cut,                 // death by melee weapon
     splitInHalf,         // death by high damage melee weapon
 
     // Fire-Related Deaths

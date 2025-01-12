@@ -17,10 +17,13 @@
 // - Additional status effects can be added as needed to expand gameplay mechanics.
 // - Consider the duration and interactions of status effects to ensure balanced gameplay.
 
+// TODO: Separate the enums from the statusEffect Manager
+
 #ifndef VIETNAM_MARINE_2_STATUSEFFECTS_H
 #define VIETNAM_MARINE_2_STATUSEFFECTS_H
 
 #include "../../include/DeathType.h"
+#include <vector>
 
 // Enum for tracking various status effects that can affect players, enemies, or objects
 enum class StatusEffect {
@@ -41,6 +44,11 @@ enum class StatusEffect {
     TimeSlow,            // Slows down time for everything but the player/enemy
     Flight,              // Temporarily allows the player/enemy to fly
     MultiShot,           // Fires multiple projectiles at once for ranged weapons
+    Invincibility,     // Player is temporarily invincible
+    instantKill,
+    HealthRegen,       // Player regenerates health over time
+    AmmoFull,          // Player regenerates ammo over time
+    berserk,           // Player is temporarily invisible to enemies
 
 
     // Negative Status Effects (Debuffs)
@@ -64,32 +72,44 @@ enum class StatusEffect {
     MicroWave,           // Slowly damages until bar is full where the entity will die instantly
     Death,               // Does nothing until bar is fully filled in which the player dies
 
+};
 
+struct ActiveStatusEffect {
+    StatusEffect effect;  // The type of status effect
+    float duration;       // Remaining duration of the effect
+
+    ActiveStatusEffect(StatusEffect effect, float duration)
+            : effect(effect), duration(duration) {}
 };
 
 // Class to manage and apply status effects to entities (players, enemies, objects)
 class StatusEffectManager {
 public:
-    StatusEffectManager() : currentEffect(StatusEffect::None), effectDuration(0.f) {}
+    StatusEffectManager() = default;
 
     // Apply a new status effect to the entity
-    void applyStatusEffect(StatusEffect newEffect, float duration);
+    void applyStatusEffect(StatusEffect newEffect, float duration, bool stackable = true);
 
     // Update the status effect over time (reduce duration, apply ongoing effects)
-    void updateStatusEffect(float deltaTime);
+    void update(float deltaTime);
 
     // Get the current status effect active on the entity
-    StatusEffect getCurrentEffect() const;
+    const std::vector<ActiveStatusEffect>& getActiveEffects() const;
+
+    // Checks if a certain status effect is on the entity
+    bool hasStatusEffect(StatusEffect effect) const;
 
     // Remove the active status effect (e.g., when the effect ends)
-    void removeStatusEffect();
+    void removeStatusEffect(StatusEffect effect);
+
+    // Remove all status effects
+    void clearAllEffects();
 
     // Determine the death type based on the current status effect
     DeathType getDeathType() const;
 
 private:
-    StatusEffect currentEffect;  // Current active status effect
-    float effectDuration;        // How long the effect will last
+    std::vector<ActiveStatusEffect> activeEffects;  // List of active status effects
 };
 
 
