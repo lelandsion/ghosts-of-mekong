@@ -34,7 +34,7 @@ enum class PlayerState {
 };
 
 // Enum for the player's movement direction
-enum class MovementDirection {
+enum class PlayerMovementDirection {
     None,              // No movement
     Left,              // Moving left
     Right,             // Moving right
@@ -67,30 +67,17 @@ enum class PlayerInventoryType {
     StockedPack
 };
 
-// Enum for special player abilities or power-up effects
-enum class PlayerAbility {
-    None,              // No special ability active
-    SpeedBoost,        // Temporary speed boost from a power-up
-    Invincibility,     // Player is temporarily invincible
-    DoubleDamage,      // Player deals double damage
-    instantKill,
-    HealthRegen,       // Player regenerates health over time
-    AmmoFull,          // Player regenerates ammo over time
-    Shielded,          // Player has an active shield
-    berserk,           // Player is temporarily invisible to enemies
-    Hallucination,     // Player will hallucinate
-};
-
 // Enum for tracking player health state (e.g., healthy, injured, critical)
 enum class PlayerHealthState {
-    Healthy,           // Full health or near full health
-    Injured,           // Health is below 75% but above 25%
-    Critical,          // Health is below 25% s
+    Happy,             // Full health or near full health
+    RoughedUp,         // Health is below 75% but above 25%
+    Dying,             // Health is below 25% s
     Dead               // Player is dead
 };
 
 // Enum for player actions, useful for managing inputs and transitions between different actions
 enum class PlayerAction {
+    None,
     MoveLeft,          // Moving left
     MoveRight,         // Moving right
     Jump,              // Jumping
@@ -102,5 +89,13 @@ enum class PlayerAction {
     Interact,          // Interact with objects in the environment (e.g., open doors, pick up items)
     ThrowGrenade       // Throwing a grenade or throwable weapon
 };
+
+enum class PlayerClass {
+    Infantry,          // Starts with a rifle and basic weapons
+    Sniper,            // Starts with a sniper lower health better stealth
+    Heavy,             // More health heavier weapons less maneuverable
+    Medic              // Can heal himself better special weapons
+};
+
 
 #endif //VIETNAM_MARINE_2_PLAYERENUMS_H
