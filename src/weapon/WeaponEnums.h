@@ -50,7 +50,7 @@ enum class WeaponType {
 
 // Enum for firing modes (e.g., single-shot, burst fire, etc.)
 enum class FireMode {
-    SingleShot,
+    SingleFire,
     BurstFire,
     Automatic
 };
@@ -107,5 +107,3 @@ enum class ReloadType {
 #endif // VIETNAM_MARINE_2_WEAPONENUMS_H
 
 
-
-#endif //VIETNAM_MARINE_2_WEAPONENUMS_H

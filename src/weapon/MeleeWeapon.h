@@ -10,10 +10,10 @@
 
 class MeleeWeapon : public Weapon {
 public:
-    MeleeWeapon(const std::string& name, int damage, float attackSpeed, float range);
+    MeleeWeapon(const std::string& spritePath, const std::string& name, int damage, float attackSpeed, float range);
 
     // Overridden fire method (in melee weapons, this would represent attacking)
-    void fire(const sf::Vector2f& direction) override;
+    void fire(const sf::Vector2f& direction);
 
     // Getters
     float getRange() const;

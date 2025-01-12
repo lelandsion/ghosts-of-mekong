@@ -6,8 +6,9 @@
 #include <iostream>
 
 // Constructor
-MeleeWeapon::MeleeWeapon(const std::string& name, int damage, float attackSpeed, float range)
-        : Weapon(name, 0, damage), attackSpeed(attackSpeed), range(range) {}
+MeleeWeapon::MeleeWeapon(const std::string& spritePath, const std::string& name, int damage, float attackSpeed, float range)
+        : Weapon(spritePath, name, attackSpeed, damage), attackSpeed(attackSpeed), range(range) {}
+
 
 // Fire method (melee attack)
 void MeleeWeapon::fire(const sf::Vector2f& direction) {

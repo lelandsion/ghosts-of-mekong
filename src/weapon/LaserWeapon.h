@@ -9,8 +9,8 @@
 
 class LaserWeapon : public Weapon {
 public:
-    LaserWeapon(const std::string& name, int damage);
-    void fire(const sf::Vector2f& direction) override;
+    LaserWeapon(const std::string& spritePath, const std::string& projectileTexturePath,  const std::string& name, int damage,  FireMode fireMode);
+    void fire(const sf::Vector2f& direction);
 };
 
 

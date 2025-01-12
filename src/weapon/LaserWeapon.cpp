@@ -6,8 +6,9 @@
 #include <iostream>
 
 // Constructor
-LaserWeapon::LaserWeapon(const std::string& name, int damage)
-        : Weapon(name, 0, damage) {}
+LaserWeapon::LaserWeapon(const std::string& spritePath, const std::string& projectileTexturePath, const std::string& name, int damage,  FireMode fireMode)
+        : Weapon(spritePath, name, 0, damage, projectileTexturePath, 50, -1, fireMode) {}
+
 
 // Fire method for laser weapons (hit scan)
 void LaserWeapon::fire(const sf::Vector2f& direction) {
