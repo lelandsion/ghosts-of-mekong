@@ -10,10 +10,9 @@
 
 ---
 
-### Screenshots
-
 #### In-Game Action:
-![Player Sprite](assets/readme/player_sprite.png)
+![Player Sprite](assets/player/player1.png)
+
 *Experience the detail of the game's art and action-packed environments.*
 Live your soldier fantasies in the free-to-play video game Ghosts of Mekong.
 * Play as a Vietnam marine at the height of the Vietnam War
