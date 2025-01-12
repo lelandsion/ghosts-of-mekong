@@ -28,12 +28,15 @@ public:
 
     virtual void update(); // Update the object's state
     virtual void render(sf::RenderWindow& window); // Render the object to the window
+    sf::FloatRect getHitbox() const;
     void setPosition(float x, float y); // Set the object's position
 
 protected:
     sf::Vector2f position; // Position of the object
     sf::Sprite sprite; // Sprite representing the object
     sf::Texture texture; // Texture for the object's sprite
+    float velocity; // speed of the game object
+    int health;
 };
 
 #endif // VIETNAM_MARINE_GAMEOBJECT_H
