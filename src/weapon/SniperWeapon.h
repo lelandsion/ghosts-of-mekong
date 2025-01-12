@@ -9,8 +9,8 @@
 
 class SniperRifle : public Weapon {
 public:
-    SniperRifle(const std::string& name, int maxAmmo, int damage, float precisionRadius);
-    void fire(const sf::Vector2f& direction) override;
+    SniperRifle(const std::string& spritePath, const std::string& projectileSpritePath, const std::string& name, int maxAmmo, float fireDelay, float bulletSpeed, int damage, float precisionRadius, FireMode fireMode);
+    void fire(const sf::Vector2f& direction);
 
 private:
     float precisionRadius;  // The accuracy radius around the target

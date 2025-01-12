@@ -6,15 +6,15 @@
 #define VIETNAM_MARINE_2_SHOTGUNWEAPON_H
 
 #include "Weapon.h"
-#include "<SFML/Graphics.hpp>"
+#include "SFML/Graphics.hpp"
 
 class Shotgun : public Weapon {
 public:
-    Shotgun(const std::string& name, int maxAmmo, int damage, int spread);
-    void fire(const sf::Vector2f& direction) override;
+    Shotgun(const std::string& spritePath, const std::string& projectileTexturePath, const std::string& name, int maxAmmo, float fireDelay, int damage, int spread,  FireMode fireMode);
+    void fire(const sf::Vector2f& direction);
 
 private:
-    sf::fireSprite;      // Sprite of bullets if the weapon does not have projectiles
+    sf::Sprite fireSprite;      // Sprite of bullets if the weapon does not have projectiles
 
     bool hasProjectile;  // Whether the weapon uses the projectile class or it uses a damage distance
 
