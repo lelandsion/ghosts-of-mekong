@@ -7,6 +7,7 @@
 - **Immersive Gameplay:** Play as a Vietnam marine at the height of the Vietnam War.
 - **Dynamic Environments:** Battle through dense jungles, intense battlefields, and gritty swamps.
 - **Action-Packed Combat:** Experience guerrilla warfare with thrilling action and tactical challenges.
+- **Power-Ups and Weapons:** Discover a range of weapons and power-ups to eviscerate your enemies.
 
 ---
 
