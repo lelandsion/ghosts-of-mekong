@@ -18,5 +18,4 @@ Live your soldier fantasies in the free-to-play video game Ghosts of Mekong.
 
 ### Coming Soon:
 - **Coming soon to [Steam](https://store.steampowered.com/) and [itch.io](https://itch.io/)!**
-
-Stay tuned for updates and launch announcements.
+- Stay tuned for updates and launch announcements.
