@@ -1,15 +1,9 @@
-//
-// Created by Leland Sion on 2024-10-16.
-//
-
-
-#define CATCH_CONFIG_MAIN
-#include "catch.hpp"
+#include <catch2/catch_test_macros.hpp>
 #include "../src/player/Player.h"
 
 TEST_CASE("Player takes damage and loses health", "[Player]") {
-Player player;
-player.setHealth(100);
+// Initialize the player with example parameters
+Player player("assets/player/player1.png", {100.f, 200.f}, 200.f, 100);
 
 SECTION("Taking damage reduces health") {
 player.applyDamage(30);
